@@ -18,14 +18,15 @@ function closeNav() {
 
 function getNewBackground(elem, backgrounds){
     var randomIndex = Math.floor(Math.random() * backgrounds.length);
-    var newSrc = backgrounds[randomIndex];
-    if (elem.src.toString().includes(newSrc)){
-        randomIndex = randomIndex+1;
-        if (randomIndex==backgrounds.length){
-            randomIndex = 0;
-        }
-        newSrc = backgrounds[randomIndex]
-    }
+    var newSrc = backgrounds[2];
+    //var newSrc = backgrounds[randomIndex];
+    // if (elem.src.toString().includes(newSrc)){
+    //     randomIndex = randomIndex+1;
+    //     if (randomIndex==backgrounds.length){
+    //         randomIndex = 0;
+    //     }
+    //     newSrc = backgrounds[randomIndex]
+    // }
     return newSrc;
 }
 

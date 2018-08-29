@@ -1,49 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"><script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script><title>Zuyi Chen's triple C's</title><style>@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
-
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
-
-a,
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
+<!DOCTYPE html><html lang="en"><head><link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"><script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js" integrity="sha384-pjaaA8dDz/5BgdFUPX6M/9SUZv4d12SUPF0axWc+VRZkx5xU3daN+lYb49+Ax+Tl" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script><title>Zuyi Chen's triple C's</title><style>
 
 .bg {
     position: fixed;
@@ -52,109 +7,143 @@ a:focus {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("");
 }
 
-.wrapper {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
+.textIntro{
+    position: fixed;
+    top: 100px;
+    left: 150px;
+    width: 600px;
+    height: 350px;
+    background-color: transparent;
 }
 
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.3s;
-    height: 100%;
-}
-
-#sidebar.active {
-    margin-left: -250px;
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
-}
-
-#sidebar ul li.active>a,
-a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
-}
-
-a[data-toggle="collapse"] {
-    position: relative;
-}
-
-.dropdown-toggle::after {
-    display: block;
+.links{
     position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    top: 450px;
+    width: 100%;
+    font-size: 25px;
+
+}
+.links #L1{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 350px;
+    width: 100px;
+    height: auto;
+
+    text-align:center;
+    vertical-align: middle;
 }
 
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
+.links #L2{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 718px;
+    width: 100px;
+    height: auto;
+
+    text-align:center;
+    vertical-align: middle;
 }
 
-ul.CTAs {
-    padding: 20px;
+.links #L3{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 1080px;
+    width: 100px;
+    height: auto;
+
+    text-align:center;
+    vertical-align: middle;
 }
 
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
+.textIntro h2{
+    font-size: 50px;
+    color: #597AB8;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 30px;
+    left: 0;
+    background-color: transparent;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
     display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
+    transition: 0.3s;
 }
 
-a.download {
-    background: #fff;
-    color: #7386D5;
+.sidenav a:hover {
+    color: #f1f1f1;
 }
 
-a.article,
-a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style><script>var isNavOpen = false;
+
+function openNav() {
+    if (isNavOpen){
+        closeNav();
+        isNavOpen = false;
+        return;
+    }
+    else {
+        document.getElementById("mySidenav").style.width = "150px";
+        isNavOpen = true;
+    }
+
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
 
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-    #sidebarCollapse span {
-        display: none;
-    }
-}</style></head><body><img class="bg" src="/images/bg.jpg"><div class="wrapper"><nav id="sidebar"><div class="sidebar-header"><h3>Bootstrap Sidebar</h3></div><ul class="list-unstyled components"><p>Dummy Heading</p><li class="active"><a class="dropdown-toggle" href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a><ul class="collapse list-unstyled" id="homeSubmenu"><li><a href="#">Home 1</a></li><li><a href="#">Home 2</a></li><li><a href="#">Home 3</a></li></ul></li><li><a href="#">About</a></li><li><a class="dropdown-toggle" href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a><ul class="collapse list-unstyled" id="pageSubmenu"><li><a href="#">Page 1</a></li><li><a href="#">Page 2</a></li><li><a href="#">Page 3</a></li></ul></li><li><a href="#">Portfolio</a></li><li><a href="#">Contact</a></li></ul></nav></div><div class="container-fluid"><h1>welcome to my webpage</h1><p>This shall be centered <mark>mark this stuff</mark> and we're good</p></div><a class="foo_link" href="http://localhost:3000/users">next page</a></body></html>
+function getNewBackground(elem, backgrounds){
+    var randomIndex = Math.floor(Math.random() * backgrounds.length);
+    var newSrc = backgrounds[2];
+    //var newSrc = backgrounds[randomIndex];
+    // if (elem.src.toString().includes(newSrc)){
+    //     randomIndex = randomIndex+1;
+    //     if (randomIndex==backgrounds.length){
+    //         randomIndex = 0;
+    //     }
+    //     newSrc = backgrounds[randomIndex]
+    // }
+    return newSrc;
+}
+
+function setNewSrc(elem, newSrc){
+    elem.src = newSrc;
+}
+
+function fadeOut(){
+    $("#background").fadeOut(2000);
+}
+
+function fadeIn(){
+    $("#background").fadeIn(2000);
+}
+
+function slideBackground(){
+    var elem = document.getElementById("background");
+    var backgrounds = ["/images/bg.jpg","/images/bg2.jpg", "/images/bg3.jpg"];
+    setInterval(function(){
+        $("#background").fadeOut(2000, function(){
+            setNewSrc(elem, getNewBackground(elem, backgrounds));
+        }).then(fadeIn());
+    }, 10000)
+}</script></head><body onload="slideBackground()"><!--the following line is the background--><img class="bg" id="background" src="/images/bg.jpg"><div class="sidenav" id="mySidenav"><a href="#">About</a><a href="#">Code</a><a href="#">Charity</a><a href="#">Cooking</a><a href="#">Contact</a></div><span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Menu</span><div class="textIntro"><h2>Hi, I'm Zuyi Chen</h2><h2 style="margin-left: 25px; margin-top: 30px;">And This Is My Website</h2></div><div class="links"><div id="L1"><a href="https://www.linkedin.com/in/zuyi-chen-856204118/"><u>Linkedin</u></a></div><div id="L2"><a href="/resume/resume.pdf" download><u>Resume</u></a></div><div id="L3"><a href="https://github.com/zchen138?tab=repositories"><u>Github</u></a></div></div></body></html>
